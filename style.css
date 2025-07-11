@@ -122,6 +122,17 @@
     margin-top: 30px;
     display: flex;
 }
+#calHead1{
+  
+    color: #ffffff;
+    height: 2vmin;
+    width: 34.6vmin;
+    align-items: center;
+    height: 5vmin;
+    width: 38vmin;
+    margin-top: 30px;
+    display: flex;
+}
 
 body {
   margin: 0;
