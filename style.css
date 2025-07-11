@@ -114,9 +114,11 @@
 #calHead{
   
     color: #ffffff;
+    height: 2vmin;
+    width: 34.6vmin;
     align-items: center;
-    height: 1vmin;
-    width: 300vmin;
+    height: 5vmin;
+    width: 38vmin;
     margin-top: 30px;
     display: flex;
 }
