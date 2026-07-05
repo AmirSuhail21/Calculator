@@ -1,157 +1,144 @@
-*{
+* {
     margin: 0;
-    padding:0;
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
-    
-}
-/* body{
-        display:flex;
-
-} */
-.container{
-    margin-top: 20px;
-    
-}
-
-.operatorBox{
-    color: blue;
-    border-radius: 2vmin;
-}
-.operator:hover{
-    background-color: aqua;
-}
-.operator{
-    margin-top: 9px;
-    height: 8.5vmin;
-    width: 10.7vmin;
-    margin-bottom: 10px;
-    font-size: 8vmin;
-    border: none;
-    background-color: #348FF7;
-    border-radius: 2vmin;
-}
-
-
-
-.body2{
-    background-color:#171616;
-    width: 55vmin;
-    height: 98vmin;
-    border-radius: 30px;
-}
-#input{
-    height: 8vmin;
-    width: 44.5vmin;
-    font-size: 6vmin;
-    text-align: center;
-    border: none;
-    border-radius: 2vmin;
-    margin-left: 9.5%;
-}
-
-.digitclass1{
-    display:block;
-    width: 455%;
-    border-radius: 80%;
-}
-
-.digitclass2{
-    width: 19%;
-    border-radius: 80%;
-    border: none;
-    display: block;
-    margin-left: 0.5%;
-}
-
-.digit{
-    background-color: #E9E9E9;
-    width: 14.5vmin;
-    height: 10vmin;
-    border-radius: 80px;
-    border: none;
-    font-size: 25px;
-    margin-bottom: 5px;
-}
-.ac{
-    background-color: #2BDC17;
-    width: 14.5vmin;
-    height: 10vmin;
-    border-radius: 80px;
-    border: none;
-    font-size: 25px;
-}
-
-
-#enter{
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-    width: 14.5vmin;
-    height: 10vmin;
-    border-radius: 80px;
-    border: none;
-    font-size: 125%;
-    margin-bottom: 5px;
-
-}
-#result{
-    color: rgb(255, 255, 255);
-    width: 46.8vmin;
-    height: 8vmin;
-    margin-top: 1.5%;
-    background-color:#5058cd;
-    border: none;
-    color: #ffffff;
-    text-align: center;
-    font-size: 5vmin;
-    border-radius: 2vmin;
-}
-
-#style {
-  position: relative;
-  top: 10px;
-  height: 1.8vmin;
-  width: 12vmin;
-  background-color: white;
-  border-radius: 50px;
-  /* margin: 0 auto; */
-  /* z-index: 2; */
-}
-
-
-#calHead{
-  
-    color: #ffffff;
-    /* height: 2vmin;
-    width: 34.6vmin; */
-    align-items: center;
-    /* height: 5vmin;
-    width: 38vmin; */
-    margin-top: 8%;
-    display:flex;
-    font-size: 135%;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column; /* Add this line */
-  height: 100vh;
-  background-color: #fddfbe;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #fddfbe;
+    font-family: Arial, sans-serif;
 }
 
+.body2 {
+    background-color: #171616;
+    width: 380px;
+    height: 680px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+#style {
+    height: 12px;
+    width: 100px;
+    background-color: white;
+    border-radius: 50px;
+    margin-bottom: 10px;
+}
+
+#calHead {
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#input {
+    height: 60px;
+    width: 100%;
+    font-size: 32px;
+    text-align: right;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.operatorBox {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.operator {
+    height: 60px;
+    width: 22%;
+    font-size: 28px;
+    border: none;
+    background-color: #348FF7;
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.operator:hover {
+    background-color: aqua;
+    color: black;
+}
+
+/* Naya Grid Layout Buttons Ke Liye */
+.digitGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.digit, .ac, #enter {
+    height: 60px;
+    border-radius: 15px;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.digit {
+    background-color: #E9E9E9;
+    color: black;
+}
+
+.ac {
+    background-color: #2BDC17;
+    color: white;
+    grid-column: span 3; /* AC button poori line lega */
+}
+
+#enter {
+    background-color: #f7a234;
+    color: white;
+    grid-column: span 2; /* Enter button do column lega */
+}
+
+#result {
+    width: 100%;
+    height: 55px;
+    background-color: #5058cd;
+    color: #ffffff;
+    text-align: center;
+    line-height: 55px;
+    font-size: 24px;
+    border-radius: 10px;
+    font-weight: bold;
+}
 
 .credit {
     position: absolute;
     top: 20px;
     left: 20px;
-    font-size: 3.5vmin;
-    font-weight: 900;        /* Extra bold */
+    font-size: 16px;
+    font-weight: 900;
     color: black;
-    font-family: 'Arial Black', 'Segoe UI', sans-serif;
+    font-family: 'Arial Black', sans-serif;
 }
