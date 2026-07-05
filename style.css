@@ -5,33 +5,29 @@
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;           
-  background-color: #fddfbe;
-  overflow: hidden;            
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #fddfbe;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
 }
 
 .body2 {
     background-color: #171616;
-    width: 380px;
-    height: auto;           
-    max-height: 95vh;           
+    width: 360px;
+    padding: 25px 20px;
     border-radius: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 25px 20px;
-    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.4);
 }
 
-
 #style {
-    height: 12px;
-    width: 100px;
+    height: 10px;
+    width: 90px;
     background-color: white;
     border-radius: 50px;
     margin-bottom: 10px;
@@ -39,26 +35,23 @@ body {
 
 #calHead {
     color: #ffffff;
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-size: 22px;
+    margin-bottom: 15px;
     font-weight: bold;
 }
 
 .container {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 #input {
-    height: 60px;
+    height: 55px;
     width: 100%;
-    font-size: 32px;
+    font-size: 28px;
     text-align: right;
     padding: 10px;
     border: none;
-    border-radius: 10px;
+    border-radius: 12px;
     background-color: #ffffff;
     margin-bottom: 15px;
 }
@@ -71,13 +64,13 @@ body {
 }
 
 .operator {
-    height: 60px;
+    height: 55px;
     width: 22%;
-    font-size: 28px;
+    font-size: 26px;
     border: none;
     background-color: #348FF7;
     color: white;
-    border-radius: 15px;
+    border-radius: 12px;
     cursor: pointer;
     transition: 0.2s;
 }
@@ -87,7 +80,7 @@ body {
     color: black;
 }
 
-/* Naya Grid Layout Buttons Ke Liye */
+/* Perfect alignment grid */
 .digitGrid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -97,8 +90,8 @@ body {
 }
 
 .digit, .ac, #enter {
-    height: 60px;
-    border-radius: 15px;
+    height: 55px;
+    border-radius: 12px;
     border: none;
     font-size: 22px;
     cursor: pointer;
@@ -119,7 +112,8 @@ body {
 #enter {
     background-color: #f7a234;
     color: white;
-    grid-column: span 2;
+    grid-column: span 2; 
+}
 
 #result {
     width: 100%;
@@ -128,8 +122,8 @@ body {
     color: #ffffff;
     text-align: center;
     line-height: 55px;
-    font-size: 24px;
-    border-radius: 10px;
+    font-size: 22px;
+    border-radius: 12px;
     font-weight: bold;
 }
 
